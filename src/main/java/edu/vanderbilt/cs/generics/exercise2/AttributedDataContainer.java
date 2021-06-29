@@ -13,6 +13,7 @@ package edu.vanderbilt.cs.generics.exercise2;
  */
 
 /**
+ * @param <T>
  * @ToDo
  *
  * The DataContainerTest does not compile because this class
@@ -35,13 +36,13 @@ package edu.vanderbilt.cs.generics.exercise2;
  */
 
 // You will need to update the class declaration
-public class AttributedDataContainer {
+public class AttributedDataContainer<T> {
 
     private double lat;
     private double lon;
 
     // This will need updating
-    private Object data;
+    private T data;
 
     public double getLat() {
         return lat;
@@ -60,12 +61,12 @@ public class AttributedDataContainer {
     }
 
     // This will need updating
-    public Object getData() {
+    public T getData() {
         return data;
     }
 
     // This will need updating
-    public void setData(Object data) {
+    public void setData(T data) {
         this.data = data;
     }
 }
