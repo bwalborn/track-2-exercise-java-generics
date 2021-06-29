@@ -1,6 +1,7 @@
 package edu.vanderbilt.cs.generics.exercise3;
 
 /**
+ * @param <T,V>
  * @ToDo
  *
  * A Mapping object stores a relationship between an identifier
@@ -14,24 +15,24 @@ package edu.vanderbilt.cs.generics.exercise3;
  * the lines in the NestedDataContainerTest and
  * move on to the NestedDataContainer class.
  */
-public class Mapping {
+public class Mapping<T,V> {
 
-    private Object identifier;
-    private Object value;
+    private T identifier;
+    private V value;
 
-    public Object getIdentifier() {
+    public T getIdentifier() {
         return identifier;
     }
 
-    public void setIdentifier(Object identifier) {
+    public void setIdentifier(T identifier) {
         this.identifier = identifier;
     }
 
-    public Object getValue() {
+    public V getValue() {
         return value;
     }
 
-    public void setValue(Object value) {
+    public void setValue(V value) {
         this.value = value;
     }
 }

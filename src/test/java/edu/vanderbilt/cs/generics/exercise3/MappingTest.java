@@ -18,44 +18,44 @@ public class MappingTest {
      *
      */
 
-//    private class Car implements Attributed<String> {
-//
-//        @Override
-//        public List<String> getAttributes() {
-//            return Arrays.asList("color", "doors");
-//        }
-//    }
-//
-//    private class Dimensons implements Attributed<Integer> {
-//
-//        @Override
-//        public List<Integer> getAttributes() {
-//            return Arrays.asList(100, 200);
-//        }
-//    }
-//
-//    private class Name {
-//
-//    }
-//
-//    private class Person {
-//
-//    }
-//
-//    @Test
-//    public void testAttributedDataContainerParameterization() {
-//
-//        Mapping<Car,Dimensons> carDimensions = new Mapping<>();
-//        carDimensions.setIdentifier(new Car());
-//        carDimensions.setValue(new Dimensons());
-//        Car car = carDimensions.getIdentifier();
-//        Dimensons dims = carDimensions.getValue();
-//
-//        Mapping<Name,Person> peoplesNames = new Mapping<>();
-//        peoplesNames.setIdentifier(new Name());
-//        peoplesNames.setValue(new Person());
-//        Name name = peoplesNames.getIdentifier();
-//        Person person = peoplesNames.getValue();
-//    }
+   private class Car implements Attributed<String> {
+
+       @Override
+       public List<String> getAttributes() {
+           return Arrays.asList("color", "doors");
+       }
+   }
+
+   private class Dimensons implements Attributed<Integer> {
+
+       @Override
+       public List<Integer> getAttributes() {
+           return Arrays.asList(100, 200);
+       }
+   }
+
+   private class Name {
+
+   }
+
+   private class Person {
+
+   }
+
+   @Test
+   public void testAttributedDataContainerParameterization() {
+
+       Mapping<Car,Dimensons> carDimensions = new Mapping<>();
+       carDimensions.setIdentifier(new Car());
+       carDimensions.setValue(new Dimensons());
+       Car car = carDimensions.getIdentifier();
+       Dimensons dims = carDimensions.getValue();
+
+       Mapping<Name,Person> peoplesNames = new Mapping<>();
+       peoplesNames.setIdentifier(new Name());
+       peoplesNames.setValue(new Person());
+       Name name = peoplesNames.getIdentifier();
+       Person person = peoplesNames.getValue();
+   }
 
 }
