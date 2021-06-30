@@ -35,13 +35,12 @@ package edu.vanderbilt.cs.generics.exercise2;
  *
  */
 
-// You will need to update the class declaration
+
 public class AttributedDataContainer<T> {
 
     private double lat;
     private double lon;
 
-    // This will need updating
     private T data;
 
     public double getLat() {
@@ -60,12 +59,10 @@ public class AttributedDataContainer<T> {
         this.lon = lon;
     }
 
-    // This will need updating
     public T getData() {
         return data;
     }
 
-    // This will need updating
     public void setData(T data) {
         this.data = data;
     }

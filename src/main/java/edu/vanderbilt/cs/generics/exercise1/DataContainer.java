@@ -15,7 +15,7 @@ import edu.vanderbilt.cs.generics.exercise2.AttributedDataContainer;
  */
 
 /**
- * @ToDo
+ * 
  *
  * The DataContainerTest does not compile because this class
  * is currently not parameterizable with a type.
@@ -36,14 +36,11 @@ import edu.vanderbilt.cs.generics.exercise2.AttributedDataContainer;
  *
  */
 
-// You will need to update the class declaration
 public class DataContainer<T> {
 
     private double lat;
     private double lon;
 
-    // This will need updating
-    // private Object data;
     private T data;
 
     public double getLat() {
@@ -62,13 +59,10 @@ public class DataContainer<T> {
         this.lon = lon;
     }
 
-    // This will need updating
-    // public Object getData() {
     public T getData() {
         return data;
     }
 
-    // This will need updating
     public void setData(T c) {
         this.data = c;
     }
