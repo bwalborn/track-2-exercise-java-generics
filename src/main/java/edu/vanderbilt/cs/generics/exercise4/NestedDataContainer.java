@@ -7,6 +7,7 @@ import edu.vanderbilt.cs.generics.exercise2.AttributedDataContainer;
 import java.util.List;
 
 /**
+ * @param <T,V>
  * @ToDo
  *
  * Refactor the NestedDataContainer to be parameterized in a way
@@ -24,25 +25,30 @@ import java.util.List;
  * about wildcards.
  *
  */
-public class NestedDataContainer {
+public class NestedDataContainer<T,V> {
 
-    private DataContainer data = new DataContainer();
+    private DataContainer<AttributedDataContainer<V>> data = new DataContainer<>();
 
-    public void setNestedData(Object nestedData){
+
+    // public void setNestedData(Object nestedData){  //type car
+    public void setNestedData(V nestedData){  //type car
         // @ToDo
         //
         // Uncomment and fix the code below.
         //
-//        AttributedDataContainer c = new AttributedDataContainer();
-//        c.setData(nestedData);
-//        data.setData(c);
+    //    AttributedDataContainer<Object> c = new AttributedDataContainer<>();
+       AttributedDataContainer<V> c = new AttributedDataContainer<>();
+       c.setData(nestedData);
+       data.setData(c);
     }
 
-    public AttributedDataContainer getData() {
+    // public AttributedDataContainer getData() {
+    public AttributedDataContainer<V> getData() {
         // @ToDo
         //
         // Update this to return data.getData();
         //
-        return null;
+        // return (AttributedDataContainer<V>) data.getData();
+        return data.getData();
     }
 }

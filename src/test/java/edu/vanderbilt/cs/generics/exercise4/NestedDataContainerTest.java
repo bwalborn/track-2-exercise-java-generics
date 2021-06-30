@@ -18,31 +18,31 @@ public class NestedDataContainerTest {
      *
      */
 
-//    private class Car implements Attributed<String> {
-//
-//        @Override
-//        public List<String> getAttributes() {
-//            return Arrays.asList("color", "doors");
-//        }
-//    }
-//
-//    private class Dimensons implements Attributed<Integer> {
-//
-//        @Override
-//        public List<Integer> getAttributes() {
-//            return Arrays.asList(100, 200);
-//        }
-//    }
-//
-//    @Test
-//    public void testAttributedDataContainerParameterization() {
-//
-//        NestedDataContainer<String, Car> container = new NestedDataContainer<>();
-//        container.setNestedData(new Car());
-//        List<String> attrs = container.getData().getData().getAttributes();
-//
-//        NestedDataContainer<Integer, Dimensons> container2 = new NestedDataContainer<>();
-//        container2.setNestedData(new Dimensons());
-//        List<Integer> attrs2 = container2.getData().getData().getAttributes();
-//    }
+   private class Car implements Attributed<String> {
+
+       @Override
+       public List<String> getAttributes() {
+           return Arrays.asList("color", "doors");
+       }
+   }
+
+   private class Dimensons implements Attributed<Integer> {
+
+       @Override
+       public List<Integer> getAttributes() {
+           return Arrays.asList(100, 200);
+       }
+   }
+
+   @Test
+   public void testAttributedDataContainerParameterization() {
+
+       NestedDataContainer<String, Car> container = new NestedDataContainer<>();
+       container.setNestedData(new Car());
+       List<String> attrs = container.getData().getData().getAttributes();
+
+       NestedDataContainer<Integer, Dimensons> container2 = new NestedDataContainer<>();
+       container2.setNestedData(new Dimensons());
+       List<Integer> attrs2 = container2.getData().getData().getAttributes();
+   }
 }

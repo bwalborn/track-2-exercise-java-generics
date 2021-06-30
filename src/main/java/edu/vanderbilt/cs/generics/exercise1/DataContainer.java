@@ -1,5 +1,7 @@
 package edu.vanderbilt.cs.generics.exercise1;
 
+import edu.vanderbilt.cs.generics.exercise2.AttributedDataContainer;
+
 /**
  *
  * @ToDo
@@ -67,7 +69,7 @@ public class DataContainer<T> {
     }
 
     // This will need updating
-    public void setData(T data) {
-        this.data = data;
+    public void setData(T c) {
+        this.data = c;
     }
 }
