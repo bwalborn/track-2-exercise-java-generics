@@ -25,7 +25,7 @@ import java.util.List;
  * about wildcards.
  *
  */
-public class NestedDataContainer<T,V> {
+public class NestedDataContainer<T,V extends Attributed<T>> {
 
     private DataContainer<AttributedDataContainer<V>> data = new DataContainer<>();
 
